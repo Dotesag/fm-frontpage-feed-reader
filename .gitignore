@@ -6,6 +6,7 @@ CLAUDE.md
 README-template.md
 preview.jpg
 data/README.md
+README-example.md
 
 # Dependencies
 node_modules/
@@ -16,6 +17,7 @@ node_modules/
 dist/
 build/
 .next/
+.turbo/
 out/
 .nuxt/
 .output/
@@ -23,10 +25,13 @@ out/
 
 # Environment
 .env
+.env.*
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
+!.env.example
+!.env.*.example
 
 # IDE
 .vscode/
@@ -50,3 +55,13 @@ coverage/
 
 # Misc
 *.tsbuildinfo
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
