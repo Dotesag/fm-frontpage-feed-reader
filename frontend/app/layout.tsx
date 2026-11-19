@@ -7,7 +7,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className="bg-bg-primary text-text-primary">{children}</body>
     </html>
   );
 }
